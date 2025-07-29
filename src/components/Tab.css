@@ -1,0 +1,21 @@
+.tab {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.tab button {
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tab button:focus {
+    background-color: #cce0ff;
+    border-color: #032549;
+}

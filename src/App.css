@@ -36,3 +36,147 @@
     transform: rotate(360deg);
   }
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right,  #055bdb,#6296c4);
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.status-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.status {
+  background: #d8dbe5;
+  padding: 20px 30px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input[type="text"] {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 60%;
+  margin-right: 10px;
+}
+
+button.add-btn {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.add-btn:hover {
+  transform: scale(1.05);
+}
+
+.filters {
+  margin: 20px 0;
+}
+
+.filters button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #ececec;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.filters button.active {
+  background: #7f7fd5;
+  color: white;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 10px 0;
+  color: white;
+}
+
+p.subtitle {
+  color: #555;
+  color: white;
+}
+
+.todo-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8faff;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.todo-left input[type="checkbox"] {
+  transform: scale(1.3);
+  accent-color: #4facfe;
+}
+
+.completed-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todo-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-date {
+  font-size: 13px;
+  color: #666;
+}
+
+.delete-btn {
+  background: #ffbaba;
+  border: none;
+  color: red;
+  font-size: 18px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #ff7b7b;
+  color: white;
+}
