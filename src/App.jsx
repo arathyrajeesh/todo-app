@@ -19,15 +19,16 @@ function App() {
     ));
   };
 
+  const deleteTodo = (id) => {
+    setTodos(prevTodos => prevTodos.filter(todo => todo.id !== id));
+  };
+
   const filteredTodos = todos.filter(todo =>
     filter === 'all' ? true :
     filter === 'active' ? !todo.completed :
     todo.completed
   );
-  const deleteTodo = (id) => {
-    setTodos(prevTodos => prevTodos.filter(todo => todo.id !== id));
-  };
-  
+
   const activeCount = todos.filter(todo => !todo.completed).length;
   const completedCount = todos.filter(todo => todo.completed).length;
 
