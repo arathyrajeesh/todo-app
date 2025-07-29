@@ -1,0 +1,66 @@
+.todo-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.todo-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f6f9ff;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.todo-left input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+.completed-text {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.todo-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.date-icon {
+    font-size: 1rem;
+}
+
+.todo-date {
+    font-family: monospace;
+}
+
+.delete-btn {
+    background: #ffecec;
+    border: none;
+    color: #ff4d4d;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+    background: #ffcccc;
+}

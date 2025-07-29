@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ToDoList from './components/TodoList';
 import CountCard from './components/Count';
 import InputText from './components/Input';
-import Tab from './components/tab'; 
+import Tab from './components/Tab'; 
 import './App.css';
 
 function App() {
